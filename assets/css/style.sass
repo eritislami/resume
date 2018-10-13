@@ -20,6 +20,13 @@ ul
   width: 100%
   max-width: 70em
 
+.background
+  padding-bottom: 320px
+  background-image: url("/assets/img/illustration.svg")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: top
+
 .subtitle
   display: block
   font-size: 1.3em
@@ -31,22 +38,30 @@ ul
   color: #4A90E2 !important
 
 .hero
-  margin: 5% 0
+  padding: 5% 0 0 0
 
   .name
+    color: #fff
     display: inline-block
     font-size: 5em
-    font-weight: 300
     margin: 0 2% 0 0
 
   span.badge
     padding: 1em
-    margin: 0.1em
+    margin: 0.3em 0.2em
     font-size: 1em
     font-weight: 300
     color: #fff
     background-color: #4A90E2
+    background-image: linear-gradient(to bottom right, #00AEA0, #6F0084)
     box-shadow: $shadow
+
+  span.email
+    display: block
+    font-size: 1.3em
+    font-weight: 400
+    color: #fff
+    margin-top: 2%
 
   .lead
     font-size: 2.5em
@@ -71,13 +86,13 @@ ul
     font-weight: 400
 
   .card.language-card
-    background-color: #e34f26
+    background-color: #00AEA0
 
   .card.framework-card
-    background-color: #00a4e4
+    background-color: #00506B
 
   .card.design-card
-    background-color: #b84592
+    background-color: #6F0084
 
   .card
     height: 100%
@@ -109,7 +124,19 @@ footer
   text-align: center
   color: #fff
   background-color: #4A90E2
-  background-image: linear-gradient(to right, #064789, #288DE0)
+  background-image: linear-gradient(to right, #6F0084, #00506B, #00AEA0)
+
+@media screen and (max-width: 2560px)
+  .background
+    padding-bottom: 545px
+
+@media screen and (max-width: 1920px)
+  .background
+    padding-bottom: 320px
+
+@media screen and (max-width: 768px)
+  .background
+    background-position: 20% 0%
 
 @media screen and (max-width: 425px)
   .hero
