@@ -14,8 +14,8 @@
   <meta name="theme-color" content="#ffffff">
   <title>Erit Islami | Web Resume</title>
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/css/mdb.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -38,12 +38,10 @@
   <div class="container">
     <div class="education">
       <h1 class="display-4 font-weight-bold text-center mb-5 wow fadeInUp">Education</h1>
-      <div class="wow fadeInLeft">
-        <h3>International University of Struga</h3>
-        <span class="subtitle">Struga, Macedonia</span>
-        <h3>Bachelor of Computer Science</h3>
-        <span class="subtitle">October 2019</span>
-      </div>
+      <h3>International University of Struga</h3>
+      <span class="subtitle">Struga, Macedonia</span>
+      <h3>Bachelor of Computer Science</h3>
+      <span class="subtitle">October 2019</span>
     </div>
     <h1 class="display-4 font-weight-bold text-center mb-5 wow fadeInUp">Skills</h1>
     <div class="skills">
@@ -145,14 +143,7 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.11/js/mdb.min.js"></script>
   <script>
-    wow = new WOW({
-        boxClass: 'wow', // default
-        animateClass: 'animated', // default
-        offset: 200, // default
-        mobile: true, // default
-        live: true // default
-      })
-      wow.init();
+    new WOW().init();
   </script>
 </body>
 
