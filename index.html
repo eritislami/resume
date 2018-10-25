@@ -149,7 +149,10 @@
       <h1 class="display-4 font-weight-bold text-center my-5">Contact</h1>
       <div class="row justify-content-center">
         <div class="col-12 col-md-8">
-          <form name="contact" method="POST" netlify>
+          <form name="contact" method="POST" netlify-honeypot="bot-field" netlify>
+            <div class="hidden">
+              <label for="bot-field">Required field <input name="bot-field" type="text" /></label>
+            </div>
             <div class="md-form">
               <input type="text" id="name" name="name" class="form-control">
               <label for="name">Name</label>
