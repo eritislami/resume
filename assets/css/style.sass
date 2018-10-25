@@ -96,6 +96,7 @@ ul
 
   .card
     height: 100%
+    border-radius: 10px
 
     .card-body
       color: #fff
@@ -126,18 +127,30 @@ footer
   background-color: #4A90E2
   background-image: linear-gradient(to right, #6F0084, #00506B, #00AEA0)
 
+// 4K
+@media screen and (max-width: 3840px)
+  .hero
+    padding: 8% 0 0 0
+
+  .background
+    padding-bottom: 23%
+
+// 1440p
 @media screen and (max-width: 2560px)
   .background
     padding-bottom: 545px
 
+// 1080p
 @media screen and (max-width: 1920px)
   .background
     padding-bottom: 320px
 
+// Tablet 
 @media screen and (max-width: 768px)
   .background
     background-position: 20% 0%
 
+// Mobile
 @media screen and (max-width: 425px)
   .hero
     text-align: center
