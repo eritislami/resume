@@ -1,4 +1,5 @@
 $shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+$text: #122942
 
 html, body
   margin: 0
@@ -9,6 +10,7 @@ body
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Roboto", "Segoe UI", sans-serif
   font-weight: 400
   -webkit-overflow-scrolling: touch
+  background-color: #C4E5F7
 
 ul
   list-style-type: none
@@ -22,10 +24,10 @@ ul
 .background
   -webkit-overflow-scrolling: touch
   padding-bottom: 320px
-  background-image: url("/assets/img/illustration.svg")
+  background-image: url("/assets/img/header.svg")
   background-repeat: no-repeat
-  background-size: cover
-  background-position: top
+  background-size: 75%
+  background-position: 0% 70%
 
 .subtitle
   display: block
@@ -39,12 +41,14 @@ ul
 
 .hero
   padding: 5% 0 0 0
+  text-align: right
 
   .name
-    color: #fff
+    color: $text
     display: inline-block
-    font-size: 5em
-    margin: 0 2% 0 0
+    font-size: 10em
+    font-weight: 600
+    margin: 0 10% 0 0
 
   span.badge
     padding: 1em
@@ -64,9 +68,10 @@ ul
     margin-top: 2%
 
   .lead
+    width: 34%
     font-size: 2.5em
     font-weight: 400
-    margin-top: 6%
+    margin: 2% 0 0 56%
     line-height: 1.5em
 
 .education
@@ -86,13 +91,13 @@ ul
     font-weight: 400
 
   .card.language-card
-    background-color: #00AEA0
+    background-color: #406EAE
 
   .card.framework-card
     background-color: #00506B
 
   .card.design-card
-    background-color: #6F0084
+    background-color: #0D2136
 
   .card
     height: 100%
@@ -125,9 +130,12 @@ ul
   .md-form
     label
       color: initial
-  
+
   .hidden
     display: none
+
+  input, textarea
+    border-bottom: 1px solid #0D2136 !important
 
 footer
   padding: 20px
@@ -135,7 +143,7 @@ footer
   text-align: center
   color: #fff
   background-color: #4A90E2
-  background-image: linear-gradient(to right, #6F0084, #00506B, #00AEA0)
+  background-image: linear-gradient(to right, #0D2136, #406EAE)
 
 // 4K
 @media screen and (max-width: 3840px)
@@ -143,27 +151,52 @@ footer
     padding: 8% 0 0 0
 
   .background
-    padding-bottom: 23%
+    padding-bottom: 32%
+    background-size: 50%
 
-// 1440p
+// 2K
 @media screen and (max-width: 2560px)
   .background
     padding-bottom: 545px
+    background-size: contain
 
 // 1080p
 @media screen and (max-width: 1920px)
   .background
-    padding-bottom: 320px
+    padding-bottom: 930px
 
-// Tablet 
+// Tablet
 @media screen and (max-width: 768px)
   .background
-    background-position: 20% 0%
+    background-position: 0 55%
+    background-size: contain
+
+  .hero
+    text-align: center
+    font-size: 70%
+
+    .lead
+      margin: 5% auto
+      width: auto
+
+    .name
+      margin: 0 auto
 
 // Mobile
 @media screen and (max-width: 425px)
+  .background
+    background-position: 0 60%
+    background-size: 109%
+    padding-bottom: 0
+    height: 800px
+
   .hero
     text-align: center
+    font-size: 45%
+
+    .lead
+      margin: 0 auto
+      width: auto
 
     .name
       margin: 0.2em 0
